@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/**
+font-family: 'Roboto', sans-serif;
+font-family: 'Roboto Mono', monospace;
+font-family: 'Space Mono', monospace;
+
+**/
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Roboto Mono', monospace;
+}
+
+a {
+  text-decoration: none;
+  color: red;
+}
+.font-swap {
+  font-family: 'Roboto Mono', monospace;
+
+}
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(52, 52, 52);
+  padding: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+.hero img {
+  border-radius: 50%;
+}
+.hero {
+  margin: 5em;
+}
+
+
+.hero-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+.content{
+  margin: 1em;
+}
+
+
+
+.content-container
+{
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.content-post{
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(42, 42, 42);
+  color: white;
+}
+
+.content-post-left{
+margin: 0.5em;
+}
+.content-post-right{
+  margin: 0.5em;
+  
+}
