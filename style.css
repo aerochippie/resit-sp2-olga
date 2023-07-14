@@ -9,12 +9,12 @@ font-family: 'Space Mono', monospace;
 *{
   box-sizing: border-box;
   margin: 0;
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
   text-decoration: none;
-  color: red;
+  color: #48601E;
 }
 .font-swap {
   font-family: 'Roboto Mono', monospace;
@@ -25,7 +25,6 @@ a {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(52, 52, 52);
   padding: 2em;
 }
 
@@ -41,9 +40,16 @@ a {
 
 .hero img {
   border-radius: 50%;
+  margin-right: 3em;
 }
 .hero {
-  margin: 5em;
+  margin: 5em auto;
+  width: 50%;
+}
+.hero h2{
+  font-size: 1.9em;  
+  font-family: 'Roboto Mono', monospace;
+  margin-bottom: 0.5em;
 }
 
 
@@ -60,7 +66,8 @@ a {
 
 
 .content{
-  margin: 1em;
+  margin: 4em;
+
 }
 
 
@@ -69,20 +76,307 @@ a {
 {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  align-items:flex-start;
+
+  gap: 1.5em;
+}
+.content-posts-cat1,.content-posts-cat2,.content-posts-cat3 {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
   gap: 1em;
 }
 
+.content-container h3 {
+  font-size: 2em;
+  text-align: center;
+}
 .content-post{
   display: flex;
   flex-direction: row;
-  background-color: rgb(42, 42, 42);
-  color: white;
+  gap: 1em;
+  padding: 1em;
+  background-color: #3d463367;
+background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+  
 }
 
 .content-post-left{
 margin: 0.5em;
 }
+
+.content-post-left img{
+  }
 .content-post-right{
   margin: 0.5em;
+
   
+}
+.content-post-right p{
+  font-size: 0.9em;
+  
+}
+.content-post-right a{
+font-size: 1.1em;  
+font-family: 'Roboto Mono', monospace;
+}
+.content-post-right h4{
+  font-size: 1.1em;  
+  font-family: 'Roboto Mono', monospace;
+  padding-bottom: 0.5em;
+  }
+  .content-container-all{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+  }
+  .content-container-all .content-post{
+    width: 400px;
+  }
+
+  .add-post {
+    background-color: #b5c599;
+    width: 30%;
+    border-radius: 1em;
+    margin: 3em auto;
+
+  }
+
+  .add-post-form{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+  }
+
+  input, textarea {
+    border:none;
+    color: rgb(251, 251, 251);
+    padding: 1em;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    background: rgba(255, 255, 255, 0.2);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  textarea:focus, input:focus{
+    border:none;
+    outline: none;
+    background-image:none;
+    background-color:transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    color: white;
+    padding: 1em;
+  }
+
+  label {
+    color: white;
+    margin: 1em 0;
+    font-size: 0.9em;  
+  font-family: 'Roboto Mono', monospace;
+  }
+
+  .radio-group {
+    margin: 1em 0;
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+   justify-content: center;
+   font-size: 0.8em;  
+   font-family: 'Roboto Mono', monospace;
+  }
+
+  #publish-post {
+  background-color: #354a12;
+  border: none;
+padding: 1em;
+  width: 30%;
+  margin: 0 auto;
+  border-radius: 1em;
+  cursor: pointer;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+  }
+
+  #publish-post:hover {
+    background-color: #c7c70b;
+    width: 40%;
+    }
+
+    .search input
+    {
+      text-align: center;
+      box-shadow: none;
+      color: #6e6e6e;
+      background-color: #ecf3e1;
+      width: 35%;
+      font-family: 'Roboto Mono', monospace;
+   
+    }
+    .search input:focus
+    {
+
+      font-family: 'Roboto Mono', monospace;
+   
+    }
+
+    .search {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 1em;
+      font-family: 'Roboto Mono', monospace;
+    }
+
+
+    .detail-container {
+      background-color: #444;
+  padding: 2em;
+
+
+    }
+
+    .detail{
+      color: #D2D2D2;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      margin-top: 3em;
+
+    }
+
+    .detail h2{
+      font-family: 'Roboto Mono', monospace;
+      margin: 2em 0;
+
+    }
+
+.detail-left{
+  width: 650px;
+}
+
+.detail-right{
+  display: flex;
+  flex-direction: column-reverse;
+   gap: 1em;
+   margin: 1em;
+}
+#delete-post-button{
+  background-color: #ee0303;
+  border: none;
+padding: 1em;
+width: 120px;
+  margin: 0 auto;
+  border-radius: 1em;
+  cursor: pointer;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+}
+
+#edit-post-button{
+  background-color: #13ee03;
+  border: none;
+padding: 1em;
+width: 120px;
+  margin: 0 auto;
+  border-radius: 1em;
+  cursor: pointer;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.edit-post {
+  display: none;
+  margin: 0 auto;
+  padding: 1em;
+  background-color: #b5c599;
+  border-radius: 1em;
+  margin: 3em auto;
+
+}
+.edit-post-form{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  
+}
+
+
+#update-post-button {
+  background-color: #13a753;
+  border: none;
+padding: 1em;
+width: 120px;
+  margin: 0 auto;
+  border-radius: 1em;
+  cursor: pointer;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+
+}
+
+#cancel-post-button {
+  background-color: #454545;
+  border: none;
+padding: 1em;
+width: 120px;
+  margin: 0 auto;
+  border-radius: 1em;
+  cursor: pointer;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.login-container{
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+.login-container a{
+margin: 3em;
+}
+
+.login{
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 2em;
+  color: white;
+
+}
+
+.login input{
+  color: #444;
+
+}
+
+#login{
+  background-color: #8c73e8;
+  border: none;
+padding: 1em;
+width: 120px;
+  margin: 0 auto;
+  border-radius: 1em;
+  cursor: pointer;
+  color: white;
+  font-family: 'Roboto Mono', monospace;
 }
